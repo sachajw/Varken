@@ -19,9 +19,9 @@ services:
     networks:
       - internal
     volumes:
-      - /path/to/docker-varken/config-folder:/config
+      - /varken/config:/config
     environment:
-      - TZ=America/Chicago
+      - TZ=Africa\Johannesburg
       - VRKN_GLOBAL_SONARR_SERVER_IDS=1,2
       - VRKN_GLOBAL_RADARR_SERVER_IDS=1,2
       - VRKN_GLOBAL_LIDARR_SERVER_IDS=false
